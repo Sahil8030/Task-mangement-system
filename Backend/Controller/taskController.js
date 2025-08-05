@@ -14,7 +14,7 @@ export const createTask = async (req, res) => {
             owner: req.user.id
         });
 
-        await task.save(); // ❗ Save the task to the database
+        await task.save(); 
 
         res.status(201).json({ success: true, task });
     } catch (err) {
