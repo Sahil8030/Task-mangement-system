@@ -1,6 +1,6 @@
 import Task from "../model/taskModel.js";
 
-// CREATE NEW TASK
+
 export const createTask = async (req, res) => {
     try {
         const { title, description, priority, dueDate, completed } = req.body;
